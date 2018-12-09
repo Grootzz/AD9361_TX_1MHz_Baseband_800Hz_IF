@@ -1,0 +1,1491 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Thu Jul 19 20:40:43 2018
+| Host         : Anish-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ad9361_tx_top_timing_summary_routed.rpt -rpx ad9361_tx_top_timing_summary_routed.rpx
+| Design       : ad9361_tx_top
+| Device       : 7k325t-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 139 register/latch pins with no clock driven by root clock pin: data_clk (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 182 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 23 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     23.308        0.000                      0                  343        0.113        0.000                      0                  343        1.100        0.000                       0                   192  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                 ------------         ----------      --------------
+sys_clk_p_200M        {0.000 2.500}        5.000           200.000         
+  clk_out1_clk_wiz_0  {0.000 25.000}       50.000          20.000          
+  clkfbout_clk_wiz_0  {0.000 2.500}        5.000           200.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_p_200M                                                                                                                                                          1.100        0.000                       0                     1  
+  clk_out1_clk_wiz_0       23.308        0.000                      0                  343        0.113        0.000                      0                  343       24.600        0.000                       0                   188  
+  clkfbout_clk_wiz_0                                                                                                                                                    3.592        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_p_200M
+  To Clock:  sys_clk_p_200M
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        1.100ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_p_200M
+Waveform(ns):       { 0.000 2.500 }
+Period(ns):         5.000
+Sources:            { sys_clk_p_200M }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.071         5.000       3.929      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       5.000       95.000     MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            1.400         2.500       1.100      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            1.400         2.500       1.100      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            1.400         2.500       1.100      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            1.400         2.500       1.100      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out1_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       23.308ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.113ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       24.600ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             23.308ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_reg/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.623ns  (logic 0.508ns (31.304%)  route 1.115ns (68.696%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.721ns = ( 23.279 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.236    -2.049 f  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/Q
+                         net (fo=16, routed)          0.577    -1.473    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__1[1]
+    SLICE_X18Y165        LUT5 (Prop_lut5_I4_O)        0.134    -1.339 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_2/O
+                         net (fo=2, routed)           0.538    -0.801    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_2_n_0
+    SLICE_X19Y164        LUT3 (Prop_lut3_I0_O)        0.138    -0.663 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_i_1/O
+                         net (fo=1, routed)           0.000    -0.663    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_i_1_n_0
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.161    23.279    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_reg/C  (IS_INVERTED)
+                         clock pessimism             -0.587    22.693    
+                         clock uncertainty           -0.086    22.607    
+    SLICE_X19Y164        FDCE (Setup_fdce_C_D)        0.038    22.645    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_en_reg_reg
+  -------------------------------------------------------------------
+                         required time                         22.645    
+                         arrival time                           0.663    
+  -------------------------------------------------------------------
+                         slack                                 23.308    
+
+Slack (MET) :             23.498ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.440ns  (logic 0.345ns (23.964%)  route 1.095ns (76.036%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.045ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.722ns = ( 23.278 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.609ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.259    -2.026 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/Q
+                         net (fo=17, routed)          0.770    -1.257    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__1[0]
+    SLICE_X20Y165        LUT6 (Prop_lut6_I2_O)        0.043    -1.214 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[4]_i_2/O
+                         net (fo=1, routed)           0.325    -0.889    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[4]_i_2_n_0
+    SLICE_X20Y164        LUT6 (Prop_lut6_I4_O)        0.043    -0.846 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.846    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[4]_i_1_n_0
+    SLICE_X20Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.160    23.278    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X20Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/C  (IS_INVERTED)
+                         clock pessimism             -0.609    22.670    
+                         clock uncertainty           -0.086    22.584    
+    SLICE_X20Y164        FDCE (Setup_fdce_C_D)        0.068    22.652    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]
+  -------------------------------------------------------------------
+                         required time                         22.652    
+                         arrival time                           0.846    
+  -------------------------------------------------------------------
+                         slack                                 23.498    
+
+Slack (MET) :             23.513ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.418ns  (logic 0.508ns (35.830%)  route 0.910ns (64.170%))
+  Logic Levels:           2  (LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.721ns = ( 23.279 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.236    -2.049 f  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/Q
+                         net (fo=16, routed)          0.577    -1.473    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__1[1]
+    SLICE_X18Y165        LUT5 (Prop_lut5_I4_O)        0.134    -1.339 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_2/O
+                         net (fo=2, routed)           0.333    -1.006    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_2_n_0
+    SLICE_X19Y164        LUT4 (Prop_lut4_I1_O)        0.138    -0.868 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_1/O
+                         net (fo=1, routed)           0.000    -0.868    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]_i_1_n_0
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.161    23.279    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/C  (IS_INVERTED)
+                         clock pessimism             -0.587    22.693    
+                         clock uncertainty           -0.086    22.607    
+    SLICE_X19Y164        FDCE (Setup_fdce_C_D)        0.038    22.645    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]
+  -------------------------------------------------------------------
+                         required time                         22.645    
+                         arrival time                           0.868    
+  -------------------------------------------------------------------
+                         slack                                 23.513    
+
+Slack (MET) :             23.530ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[7]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.400ns  (logic 0.450ns (32.154%)  route 0.950ns (67.846%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.721ns = ( 23.279 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.259    -2.026 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/Q
+                         net (fo=19, routed)          0.389    -1.638    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__0[4]
+    SLICE_X17Y165        LUT3 (Prop_lut3_I2_O)        0.054    -1.584 f  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_2/O
+                         net (fo=4, routed)           0.561    -1.023    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_2_n_0
+    SLICE_X19Y164        LUT6 (Prop_lut6_I3_O)        0.137    -0.886 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_1/O
+                         net (fo=1, routed)           0.000    -0.886    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_1_n_0
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.161    23.279    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[7]/C  (IS_INVERTED)
+                         clock pessimism             -0.587    22.693    
+                         clock uncertainty           -0.086    22.607    
+    SLICE_X19Y164        FDCE (Setup_fdce_C_D)        0.037    22.644    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[7]
+  -------------------------------------------------------------------
+                         required time                         22.644    
+                         arrival time                           0.886    
+  -------------------------------------------------------------------
+                         slack                                 23.530    
+
+Slack (MET) :             23.629ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[3]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.307ns  (logic 0.345ns (26.388%)  route 0.962ns (73.612%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.045ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.722ns = ( 23.278 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.609ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.259    -2.026 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[0]/Q
+                         net (fo=17, routed)          0.772    -1.255    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__1[0]
+    SLICE_X20Y165        LUT6 (Prop_lut6_I4_O)        0.043    -1.212 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[3]_i_2/O
+                         net (fo=1, routed)           0.191    -1.021    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[3]_i_2_n_0
+    SLICE_X20Y164        LUT6 (Prop_lut6_I4_O)        0.043    -0.978 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[3]_i_1/O
+                         net (fo=1, routed)           0.000    -0.978    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[3]_i_1_n_0
+    SLICE_X20Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.160    23.278    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X20Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[3]/C  (IS_INVERTED)
+                         clock pessimism             -0.609    22.670    
+                         clock uncertainty           -0.086    22.584    
+    SLICE_X20Y164        FDCE (Setup_fdce_C_D)        0.067    22.651    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         22.651    
+                         arrival time                           0.978    
+  -------------------------------------------------------------------
+                         slack                                 23.629    
+
+Slack (MET) :             23.666ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.265ns  (logic 0.405ns (32.021%)  route 0.860ns (67.979%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.721ns = ( 23.279 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.236    -2.049 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/Q
+                         net (fo=16, routed)          0.597    -1.453    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__1[1]
+    SLICE_X18Y165        LUT6 (Prop_lut6_I1_O)        0.126    -1.327 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[6]_i_2/O
+                         net (fo=1, routed)           0.263    -1.064    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[6]_i_2_n_0
+    SLICE_X17Y164        LUT6 (Prop_lut6_I2_O)        0.043    -1.021 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[6]_i_1/O
+                         net (fo=1, routed)           0.000    -1.021    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[6]_i_1_n_0
+    SLICE_X17Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.161    23.279    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X17Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/C  (IS_INVERTED)
+                         clock pessimism             -0.587    22.693    
+                         clock uncertainty           -0.086    22.607    
+    SLICE_X17Y164        FDCE (Setup_fdce_C_D)        0.038    22.645    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]
+  -------------------------------------------------------------------
+                         required time                         22.645    
+                         arrival time                           1.021    
+  -------------------------------------------------------------------
+                         slack                                 23.666    
+
+Slack (MET) :             23.792ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[1]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 fall@25.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        1.167ns  (logic 0.450ns (38.575%)  route 0.717ns (61.425%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.722ns = ( 23.278 - 25.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906     0.906 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     1.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    -5.799 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    -3.669    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.576 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    -2.285    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X16Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y165        FDCE (Prop_fdce_C_Q)         0.259    -2.026 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[4]/Q
+                         net (fo=19, routed)          0.389    -1.638    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg__0[4]
+    SLICE_X17Y165        LUT3 (Prop_lut3_I2_O)        0.054    -1.584 f  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_2/O
+                         net (fo=4, routed)           0.328    -1.256    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[7]_i_2_n_0
+    SLICE_X18Y165        LUT6 (Prop_lut6_I3_O)        0.137    -1.119 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[1]_i_1/O
+                         net (fo=1, routed)           0.000    -1.119    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[1]_i_1_n_0
+    SLICE_X18Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    25.803 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    26.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    20.030 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    22.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    22.118 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.160    23.278    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X18Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[1]/C  (IS_INVERTED)
+                         clock pessimism             -0.587    22.692    
+                         clock uncertainty           -0.086    22.606    
+    SLICE_X18Y165        FDCE (Setup_fdce_C_D)        0.067    22.673    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                         22.673    
+                         arrival time                           1.119    
+  -------------------------------------------------------------------
+                         slack                                 23.792    
+
+Slack (MET) :             24.327ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 rise@50.000ns - clk_out1_clk_wiz_0 fall@25.000ns)
+  Data Path Delay:        0.563ns  (logic 0.263ns (46.706%)  route 0.300ns (53.294%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.721ns = ( 48.279 - 50.000 ) 
+    Source Clock Delay      (SCD):    -2.285ns = ( 22.715 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906    25.906 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081    26.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    19.201 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    21.331    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    21.424 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.291    22.715    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X20Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y164        FDCE (Prop_fdce_C_Q)         0.263    22.978 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[4]/Q
+                         net (fo=2, routed)           0.300    23.278    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[4]
+    SLICE_X20Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     50.000    50.000 r  
+    AD12                                              0.000    50.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    50.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    50.803 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    51.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    45.030 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    47.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    47.118 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.161    48.279    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X20Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[4]/C
+                         clock pessimism             -0.587    47.693    
+                         clock uncertainty           -0.086    47.607    
+    SLICE_X20Y163        FDCE (Setup_fdce_C_D)       -0.002    47.605    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[4]
+  -------------------------------------------------------------------
+                         required time                         47.605    
+                         arrival time                         -23.278    
+  -------------------------------------------------------------------
+                         slack                                 24.327    
+
+Slack (MET) :             24.344ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 rise@50.000ns - clk_out1_clk_wiz_0 fall@25.000ns)
+  Data Path Delay:        0.539ns  (logic 0.228ns (42.320%)  route 0.311ns (57.680%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.720ns = ( 48.280 - 50.000 ) 
+    Source Clock Delay      (SCD):    -2.284ns = ( 22.716 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906    25.906 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081    26.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    19.201 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    21.331    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    21.424 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.292    22.716    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X19Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X19Y164        FDCE (Prop_fdce_C_Q)         0.228    22.944 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[0]/Q
+                         net (fo=2, routed)           0.311    23.254    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[0]
+    SLICE_X19Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     50.000    50.000 r  
+    AD12                                              0.000    50.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    50.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    50.803 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    51.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    45.030 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    47.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    47.118 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.162    48.280    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X19Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]/C
+                         clock pessimism             -0.587    47.694    
+                         clock uncertainty           -0.086    47.608    
+    SLICE_X19Y163        FDCE (Setup_fdce_C_D)       -0.010    47.598    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]
+  -------------------------------------------------------------------
+                         required time                         47.598    
+                         arrival time                         -23.254    
+  -------------------------------------------------------------------
+                         slack                                 24.344    
+
+Slack (MET) :             24.349ns  (required time - arrival time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_clk_wiz_0 rise@50.000ns - clk_out1_clk_wiz_0 fall@25.000ns)
+  Data Path Delay:        0.521ns  (logic 0.228ns (43.755%)  route 0.293ns (56.245%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.720ns = ( 48.280 - 50.000 ) 
+    Source Clock Delay      (SCD):    -2.284ns = ( 22.716 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.587ns
+  Clock Uncertainty:      0.086ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.156ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 fall edge)
+                                                     25.000    25.000 f  
+    AD12                                              0.000    25.000 f  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    25.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.906    25.906 f  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081    26.987    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.786    19.201 f  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.130    21.331    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    21.424 f  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.292    22.716    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X17Y164        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y164        FDCE (Prop_fdce_C_Q)         0.228    22.944 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg_reg[6]/Q
+                         net (fo=2, routed)           0.293    23.237    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/dout_reg[6]
+    SLICE_X17Y161        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                     50.000    50.000 r  
+    AD12                                              0.000    50.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000    50.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.803    50.803 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986    51.789    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.759    45.030 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.005    47.035    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    47.118 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         1.162    48.280    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X17Y161        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[6]/C
+                         clock pessimism             -0.587    47.694    
+                         clock uncertainty           -0.086    47.608    
+    SLICE_X17Y161        FDCE (Setup_fdce_C_D)       -0.022    47.586    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[6]
+  -------------------------------------------------------------------
+                         required time                         47.586    
+                         arrival time                         -23.237    
+  -------------------------------------------------------------------
+                         slack                                 24.349    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.113ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_addr_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.211ns  (logic 0.128ns (60.799%)  route 0.083ns (39.201%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.649ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.064ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X15Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_addr_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y166        FDCE (Prop_fdce_C_Q)         0.100    -0.497 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_addr_reg[3]/Q
+                         net (fo=1, routed)           0.083    -0.414    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_addr_reg[9][3]
+    SLICE_X14Y166        LUT3 (Prop_lut3_I0_O)        0.028    -0.386 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[11]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.386    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[11]_i_1__0_n_0
+    SLICE_X14Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.784    -0.649    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X14Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[11]/C
+                         clock pessimism              0.064    -0.586    
+    SLICE_X14Y166        FDCE (Hold_fdce_C_D)         0.087    -0.499    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[11]
+  -------------------------------------------------------------------
+                         required time                          0.499    
+                         arrival time                          -0.386    
+  -------------------------------------------------------------------
+                         slack                                  0.113    
+
+Slack (MET) :             0.132ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.203ns  (logic 0.100ns (49.149%)  route 0.103ns (50.851%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.648ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.083ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X9Y166         FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y166         FDCE (Prop_fdce_C_Q)         0.100    -0.497 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[3]/Q
+                         net (fo=1, routed)           0.103    -0.393    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg_n_0_[3]
+    SLICE_X10Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.785    -0.648    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X10Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[3]/C
+                         clock pessimism              0.083    -0.566    
+    SLICE_X10Y166        FDCE (Hold_fdce_C_D)         0.040    -0.526    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.526    
+                         arrival time                          -0.393    
+  -------------------------------------------------------------------
+                         slack                                  0.132    
+
+Slack (MET) :             0.139ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.225ns  (logic 0.148ns (65.915%)  route 0.077ns (34.085%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.648ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.064ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.587    -0.596    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X12Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y165        FDCE (Prop_fdce_C_Q)         0.118    -0.478 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[6]/Q
+                         net (fo=1, routed)           0.077    -0.401    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_in_reg[7][6]
+    SLICE_X13Y165        LUT3 (Prop_lut3_I0_O)        0.030    -0.371 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[6]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.371    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[6]_i_1__0_n_0
+    SLICE_X13Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.785    -0.648    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X13Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/C
+                         clock pessimism              0.064    -0.585    
+    SLICE_X13Y165        FDCE (Hold_fdce_C_D)         0.075    -0.510    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]
+  -------------------------------------------------------------------
+                         required time                          0.510    
+                         arrival time                          -0.371    
+  -------------------------------------------------------------------
+                         slack                                  0.139    
+
+Slack (MET) :             0.145ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.196ns  (logic 0.100ns (51.054%)  route 0.096ns (48.946%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.648ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.063ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X11Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y166        FDCE (Prop_fdce_C_Q)         0.100    -0.497 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[1]/Q
+                         net (fo=1, routed)           0.096    -0.401    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg_n_0_[1]
+    SLICE_X10Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.785    -0.648    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X10Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[1]/C
+                         clock pessimism              0.063    -0.586    
+    SLICE_X10Y166        FDCE (Hold_fdce_C_D)         0.040    -0.546    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.546    
+                         arrival time                          -0.401    
+  -------------------------------------------------------------------
+                         slack                                  0.145    
+
+Slack (MET) :             0.146ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_id_chk_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.264ns  (logic 0.146ns (55.243%)  route 0.118ns (44.757%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.648ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.083ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X20Y162        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y162        FDCE (Prop_fdce_C_Q)         0.118    -0.479 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[3]/Q
+                         net (fo=3, routed)           0.118    -0.360    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/p_0_in_1
+    SLICE_X22Y162        LUT6 (Prop_lut6_I0_O)        0.028    -0.332 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_id_chk_i_1/O
+                         net (fo=1, routed)           0.000    -0.332    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv_n_15
+    SLICE_X22Y162        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_id_chk_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.785    -0.648    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X22Y162        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_id_chk_reg/C
+                         clock pessimism              0.083    -0.566    
+    SLICE_X22Y162        FDCE (Hold_fdce_C_D)         0.087    -0.479    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_id_chk_reg
+  -------------------------------------------------------------------
+                         required time                          0.479    
+                         arrival time                          -0.332    
+  -------------------------------------------------------------------
+                         slack                                  0.146    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state_reg[0]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.244ns  (logic 0.128ns (52.435%)  route 0.116ns (47.565%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.647ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.083ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X17Y163        FDPE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y163        FDPE (Prop_fdpe_C_Q)         0.100    -0.497 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state_reg[0]/Q
+                         net (fo=24, routed)          0.116    -0.380    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state_reg_n_0_[0]
+    SLICE_X15Y163        LUT6 (Prop_lut6_I1_O)        0.028    -0.352 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_i_1/O
+                         net (fo=1, routed)           0.000    -0.352    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_i_1_n_0
+    SLICE_X15Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.786    -0.647    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X15Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_reg/C
+                         clock pessimism              0.083    -0.565    
+    SLICE_X15Y163        FDCE (Hold_fdce_C_D)         0.061    -0.504    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_busy_reg
+  -------------------------------------------------------------------
+                         required time                          0.504    
+                         arrival time                          -0.352    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.157ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.232ns  (logic 0.157ns (67.578%)  route 0.075ns (32.422%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.648ns
+    Source Clock Delay      (SCD):    -0.596ns
+    Clock Pessimism Removal (CPR):    -0.053ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.587    -0.596    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X13Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y165        FDCE (Prop_fdce_C_Q)         0.091    -0.505 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/Q
+                         net (fo=1, routed)           0.075    -0.429    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[6]
+    SLICE_X13Y165        LUT3 (Prop_lut3_I2_O)        0.066    -0.363 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[7]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.363    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[7]_i_1__0_n_0
+    SLICE_X13Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.785    -0.648    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X13Y165        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[7]/C
+                         clock pessimism              0.053    -0.596    
+    SLICE_X13Y165        FDCE (Hold_fdce_C_D)         0.075    -0.521    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[7]
+  -------------------------------------------------------------------
+                         required time                          0.521    
+                         arrival time                          -0.363    
+  -------------------------------------------------------------------
+                         slack                                  0.157    
+
+Slack (MET) :             0.158ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.219ns  (logic 0.118ns (53.764%)  route 0.101ns (46.236%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.649ns
+    Source Clock Delay      (SCD):    -0.599ns
+    Clock Pessimism Removal (CPR):    -0.065ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.584    -0.599    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X14Y168        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y168        FDCE (Prop_fdce_C_Q)         0.118    -0.481 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[0]/Q
+                         net (fo=1, routed)           0.101    -0.379    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg_n_0_[0]
+    SLICE_X15Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.784    -0.649    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X15Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[0]/C
+                         clock pessimism              0.065    -0.585    
+    SLICE_X15Y166        FDCE (Hold_fdce_C_D)         0.047    -0.538    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_data_in_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.538    
+                         arrival time                          -0.379    
+  -------------------------------------------------------------------
+                         slack                                  0.158    
+
+Slack (MET) :             0.160ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_rfdc_cal_done_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.231ns  (logic 0.146ns (63.168%)  route 0.085ns (36.832%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.647ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.062ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X18Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y163        FDCE (Prop_fdce_C_Q)         0.118    -0.479 f  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[1]/Q
+                         net (fo=9, routed)           0.085    -0.393    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg_n_0_[1]
+    SLICE_X19Y163        LUT5 (Prop_lut5_I0_O)        0.028    -0.365 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_rfdc_cal_done_i_1/O
+                         net (fo=1, routed)           0.000    -0.365    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv_n_14
+    SLICE_X19Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_rfdc_cal_done_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.786    -0.647    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/clk_out1
+    SLICE_X19Y163        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_rfdc_cal_done_reg/C
+                         clock pessimism              0.062    -0.586    
+    SLICE_X19Y163        FDCE (Hold_fdce_C_D)         0.060    -0.526    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_rfdc_cal_done_reg
+  -------------------------------------------------------------------
+                         required time                          0.526    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.160    
+
+Slack (MET) :             0.161ns  (arrival time - required time)
+  Source:                 ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.236ns  (logic 0.160ns (67.704%)  route 0.076ns (32.296%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.649ns
+    Source Clock Delay      (SCD):    -0.597ns
+    Clock Pessimism Removal (CPR):    -0.053ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.388     0.388 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.891    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.040    -2.149 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.940    -1.209    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.183 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.586    -0.597    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X13Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y166        FDCE (Prop_fdce_C_Q)         0.091    -0.506 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[2]/Q
+                         net (fo=1, routed)           0.076    -0.429    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[2]
+    SLICE_X13Y166        LUT3 (Prop_lut3_I2_O)        0.069    -0.360 r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[3]_i_1__0/O
+                         net (fo=1, routed)           0.000    -0.360    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd[3]_i_1__0_n_0
+    SLICE_X13Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    AD12                                              0.000     0.000 r  sys_clk_p_200M (IN)
+                         net (fo=0)                   0.000     0.000    clk_wiz_i0/inst/clk_in1_p
+    AD12                 IBUFDS (Prop_ibufds_I_O)     0.470     0.470 r  clk_wiz_i0/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.023    clk_wiz_i0/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.493    -2.470 r  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.007    -1.463    clk_wiz_i0/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.433 r  clk_wiz_i0/inst/clkout1_buf/O
+                         net (fo=187, routed)         0.784    -0.649    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/clk_out1
+    SLICE_X13Y166        FDCE                                         r  ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[3]/C
+                         clock pessimism              0.053    -0.597    
+    SLICE_X13Y166        FDCE (Hold_fdce_C_D)         0.075    -0.522    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.522    
+                         arrival time                          -0.360    
+  -------------------------------------------------------------------
+                         slack                                  0.161    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            1.409         50.000      48.592     BUFGCTRL_X0Y0    clk_wiz_i0/inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.071         50.000      48.929     MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X15Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[9]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X17Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/state_reg[2]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X19Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_en_reg/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X19Y163    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X16Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X16Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[3]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X19Y163    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[7]/C
+Min Period        n/a     FDCE/C              n/a            0.750         50.000      49.250     SLICE_X15Y166    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/ad9361_reg_addr_reg[8]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       50.000      163.360    MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X15Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[9]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X13Y163    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg_rep[5]_rep__1/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X16Y166    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[23]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X13Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[6]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X13Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[7]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X13Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_reg[8]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X17Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/state_reg[2]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X19Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_en_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X19Y163    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_reg_data_out_reg[0]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         25.000      24.600     SLICE_X16Y165    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/shift_reg_reg[1]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X5Y169     ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X9Y160     ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[7]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X9Y160     ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[7]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X5Y164     ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/cmd_reg[8]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X14Y159    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[4]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X14Y159    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[4]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X12Y163    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[5]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X14Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[6]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X14Y160    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[7]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         25.000      24.650     SLICE_X14Y159    ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_reg[8]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.592ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 2.500 }
+Period(ns):         5.000
+Sources:            { clk_wiz_i0/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            1.409         5.000       3.592      BUFGCTRL_X0Y1    clk_wiz_i0/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.071         5.000       3.929      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.071         5.000       3.929      MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       5.000       95.000     MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       5.000       208.360    MMCME2_ADV_X1Y1  clk_wiz_i0/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

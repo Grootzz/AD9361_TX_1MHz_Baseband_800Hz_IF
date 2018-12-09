@@ -1,0 +1,89 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Thu Jul 19 20:40:01 2018
+| Host         : Anish-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file ad9361_tx_top_control_sets_placed.rpt
+| Design       : ad9361_tx_top
+| Device       : xc7k325t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |   111 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             110 |           24 |
+| No           | No                    | Yes                    |              29 |           17 |
+| No           | Yes                   | No                     |              25 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             157 |           71 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|        Clock Signal       |                                         Enable Signal                                         | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------------+-----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+| ~user_gpio_p_OBUF         |                                                                                               |                  |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_cs_i_1_n_0   | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[4]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[5]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[6]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[7]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[0]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[1]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[2]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/D[3]                                       | sys_rst_IBUF     |                1 |              1 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state[4]_i_1__0_n_0     | sys_rst_IBUF     |                2 |              4 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/ad9361_spi_mosi_i_1_n_0 | sys_rst_IBUF     |                1 |              6 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/state_reg[0]_0[0]       | sys_rst_IBUF     |                5 |              7 |
+| ~clk_wiz_i0/inst/clk_out1 |                                                                                               | sys_rst_IBUF     |                4 |              7 |
+|  user_gpio_p_OBUF         |                                                                                               | sys_rst_IBUF     |                4 |             12 |
+| ~user_gpio_p_OBUF         |                                                                                               | sys_rst_IBUF     |                3 |             13 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/E[0]                    | sys_rst_IBUF     |                7 |             19 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/state[1]_i_1_n_0                           | sys_rst_IBUF     |               18 |             19 |
+|  clk_wiz_i0/inst/clk_out1 |                                                                                               | sys_rst_IBUF     |               13 |             22 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/uut_ad9361_spi_drv/cmd_0                   | sys_rst_IBUF     |                4 |             24 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/wait_cnt                                   | sys_rst_IBUF     |               11 |             26 |
+|  clk_wiz_i0/inst/clk_out1 | ad9361_unit_i0/uut_ad9361_init/uut_ad9361_spi_ctrl/index_0                                    | sys_rst_IBUF     |               14 |             43 |
+|  user_gpio_p_OBUF         |                                                                                               |                  |               24 |            111 |
++---------------------------+-----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    10 |
+| 4      |                     1 |
+| 6      |                     1 |
+| 7      |                     2 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

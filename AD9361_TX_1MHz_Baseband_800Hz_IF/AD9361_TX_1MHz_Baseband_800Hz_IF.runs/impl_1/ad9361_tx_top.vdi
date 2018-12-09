@@ -1,0 +1,525 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Jul 19 20:39:14 2018
+# Process ID: 1644
+# Current directory: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1
+# Command line: vivado.exe -log ad9361_tx_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ad9361_tx_top.tcl -notrace
+# Log file: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top.vdi
+# Journal file: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ad9361_tx_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_i0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.dcp' for cell 'ad9361_unit_i0/bb_iq_generator'
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_i0/inst'
+Finished Parsing XDC File [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_i0/inst'
+Parsing XDC File [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_i0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1166.926 ; gain = 561.453
+Finished Parsing XDC File [e:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_i0/inst'
+Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/constrs_1/imports/new/ad9361_rx_top.xdc]
+Finished Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/constrs_1/imports/new/ad9361_rx_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1166.926 ; gain = 886.820
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.972 . Memory (MB): peak = 1166.926 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: fe35655f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1177.441 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 49 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: fe35655f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1177.441 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12cec55b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1177.441 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 66 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12cec55b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1177.441 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 12cec55b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 1177.441 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1177.441 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 12cec55b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.247 . Memory (MB): peak = 1177.441 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 15ff1525d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1195.883 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 15ff1525d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1195.883 ; gain = 18.441
+31 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1195.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_opt.dcp' has been generated.
+Command: report_drc -file ad9361_tx_top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1195.883 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10236af7a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1195.883 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1aa13ae5e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1bfbef9a4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1bfbef9a4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.883 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1bfbef9a4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 2554c0bb5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2554c0bb5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e11990c8
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 24469ac22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 24469ac22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1ae75c387
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 249cbd1e9
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2393bafcb
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2393bafcb
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1195.883 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2393bafcb
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1195.883 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1b05c9ccf
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1b05c9ccf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+INFO: [Place 30-746] Post Placement Timing Summary WNS=23.513. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 17e9e8ef5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+Phase 4.1 Post Commit Optimization | Checksum: 17e9e8ef5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 17e9e8ef5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 17e9e8ef5
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: ed2717dd
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: ed2717dd
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+Ending Placer Task | Checksum: 8aa48955
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.375 ; gain = 9.492
+50 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1205.375 ; gain = 9.492
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1205.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1205.375 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1205.375 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1205.375 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 77164a1a ConstDB: 0 ShapeSum: 138e3f3b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 16c16147e
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.000 ; gain = 277.625
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 16c16147e
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.000 ; gain = 277.625
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 16c16147e
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.000 ; gain = 277.625
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 16c16147e
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 1483.000 ; gain = 277.625
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1303d0eff
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 1522.492 ; gain = 317.117
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=23.460 | TNS=0.000  | WHS=-0.100 | THS=-3.939 |
+
+Phase 2 Router Initialization | Checksum: 1334b0bee
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1ba6ecb2a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:30 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 201
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=23.195 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: cf1028e1
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+Phase 4 Rip-up And Reroute | Checksum: cf1028e1
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: cf1028e1
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: cf1028e1
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+Phase 5 Delay and Skew Optimization | Checksum: cf1028e1
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 100433759
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=23.303 | TNS=0.000  | WHS=0.109  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 100433759
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+Phase 6 Post Hold Fix | Checksum: 100433759
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0655601 %
+  Global Horizontal Routing Utilization  = 0.0550255 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 79ef6b1b
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 79ef6b1b
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 132fd3ec8
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=23.303 | TNS=0.000  | WHS=0.109  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 132fd3ec8
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1522.492 ; gain = 317.117
+
+Routing Is Done.
+62 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 1522.492 ; gain = 317.117
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.279 . Memory (MB): peak = 1522.492 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_routed.dcp' has been generated.
+Command: report_drc -file ad9361_tx_top_drc_routed.rpt -pb ad9361_tx_top_drc_routed.pb -rpx ad9361_tx_top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file ad9361_tx_top_methodology_drc_routed.rpt -rpx ad9361_tx_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file ad9361_tx_top_power_routed.rpt -pb ad9361_tx_top_power_summary_routed.pb -rpx ad9361_tx_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 19 20:40:43 2018...
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Jul 19 20:41:29 2018
+# Process ID: 25808
+# Current directory: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1
+# Command line: vivado.exe -log ad9361_tx_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ad9361_tx_top.tcl -notrace
+# Log file: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/ad9361_tx_top.vdi
+# Journal file: E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ad9361_tx_top.tcl -notrace
+Command: open_checkpoint ad9361_tx_top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 225.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top_board.xdc]
+Finished Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top_board.xdc]
+Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1142.918 ; gain = 561.332
+Finished Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top_early.xdc]
+Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top.xdc]
+Finished Parsing XDC File [E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/.Xil/Vivado-25808-Anish-PC/dcp3/ad9361_tx_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1143.922 ; gain = 1.004
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1143.922 ; gain = 1.004
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.1 (64-bit) build 1846317
+open_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1148.992 ; gain = 928.211
+Command: write_bitstream -force ad9361_tx_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t-ffg900'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ad9361_tx_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'E:/VivadoProject/AD9361_TX_1MHz_Baseband_800Hz_IF/AD9361_TX_1MHz_Baseband_800Hz_IF.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jul 19 20:42:33 2018. For additional details about this file, please refer to the WebTalk help file at D:/XilinxVivado/Vivado/2017.1/doc/webtalk_introduction.html.
+18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1636.055 ; gain = 487.063
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 19 20:42:33 2018...
