@@ -13,8 +13,9 @@
 
 **Basic Paramater**
 
-- Carrier frequency : 800MHz 
-- Data Rate : 1Mbps 
+- Carrier Frequency : 800MHz 
+- Data Rate : 1Mbps (sine wave)
+- Sampling Rate : 18MHz
 ---
 @author : noodle.ax@gmail.com  
 Good luck!
