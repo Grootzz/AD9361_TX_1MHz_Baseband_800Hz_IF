@@ -1,6 +1,6 @@
 # Overview
 
-> config `ad9361` to TX mode and modulate for MSK.
+> config `ad9361` to TX mode and test dot frequency.
 
 **Verification platform**
 
